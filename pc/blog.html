@@ -1,0 +1,35 @@
+---
+layout: default
+title: Надежженость
+---
+
+<!--=====================
+          Content
+======================-->
+<section id="content">
+  <div class="ic"></div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h3>Our Blog</h3>
+
+        {% for post in site.posts %}
+        <div class="blog">
+          <time datetime="{{ post.date | date: '%b %-d, %Y' }}"><span class="count">02</span><strong>July</strong>2014</time>
+          <img src="{{post.img}}" alt="" class="img_inner fleft">
+          <div class="extra_wrapper">
+            <a href="#" class="comment"><span class="fa fa-comments"></span> 3</a>
+            <p><span class="fwn"><a href="#">
+                  {{ post.title }}
+                  </a>
+                </span><em>Posted by <a href="#">Admin</a></em></p>
+            {{post.description}}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="link-1">more</a>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,483 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onecl1ck</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Наш файл стилей -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+</script>
+
+<script>
+    function setfocustel() {
+        tel.focus();
+    }
+</script>
+
+<script>
+    function checktel() {
+        if (document.getElementById("tel").value == '') {
+            alert('Пожалуйста, введите ваш номер');
+        }
+        else {
+            alerttel();
+        }
+    }
+</script>
+
+<script>
+    function alerttel() {
+        var val = document.getElementById('tel').value;
+        //document.getElementById('str').innerHTML = "Вы ввели: " + val;
+        confirm("Мы перезвоним на номер " + val + " в течении пары минут");
+    }
+</script>
+<script>
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 10) {
+
+            $('.header').addClass('header-hidden');
+            $('.menu__item a').addClass('menu__item-hidden');
+            $('.top__btn').addClass('top__btn-hidden');
+
+        }
+        if (10 > scrolled) {
+
+            $('.header').removeClass('header-hidden');
+            $('.menu__item a').removeClass('menu__item-hidden');
+            $('.top__btn').removeClass('top__btn-hidden');
+        }
+
+    }
+</script>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Tegridy" class="logo animated fadeInDown">
+                    </a>
+                </div>
+                <div class="col-lg-9 hidden-xs hidden-sm">
+                    <nav>
+                        <ul class="menu d-flex justify-content-center animated fadeInDown">
+                            <li class="menu__item">
+                                <a href="price.html" class="d-none d-md-block">
+                                    Цены
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="service.html" class="d-none d-md-block">
+                                    Лысково
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html">
+                                    <i class="fa fa-phone" aria-hidden="true"></i> +7 (953) 56-555-19
+                                </a>
+                            </li>
+                            <li>
+                                <button type="submit" id="top__btn" class="top__btn" onclick="setfocustel();">Позвонить! </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="prices">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="invite d-flex animated bounce">
+                        <h1>
+                            Установка Windows от 500<i class="fa fa-rub" aria-hidden="true"></i>
+                            <br>
+                            Выезд и диагностика - бесплатно!
+                        </h1>
+
+                        <form action="#" class="phoneform">
+                            <input id="tel" type="tel" placeholder="Твои цыфры, поц?" class="phone__input" required>
+                            <input id="butt" type="submit" class="invite__btn orange" value="Хотеть!" onclick="checktel();">
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="price animated fadeInUp">
+                        <h1>Ремонт</h1>
+                        <table cellpadding="7">
+                            <tr>
+                                <td width="100%"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Замена клавиатуры</td>
+                                <td nowrap>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Замена клавиатуры</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Замена клавиатуры</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Замена клавиатуры</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Замена клавиатуры</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="price price-up animated fadeInUp">
+                        <h1>Неполадки</h1>
+                        <table cellpadding="7">
+                            <tr>
+                                <td width="100%"><i class="fa fa-power-off" aria-hidden="true"></i> Не включается</td>
+                                <td nowrap>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="100%" align="left"><i class="fa fa-power-off" aria-hidden="true"></i> Не включается</td>
+                                <td width="70">500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250" align="left"><i class="fa fa-power-off" aria-hidden="true"></i> Не включается</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250" align="left"><i class="fa fa-power-off" aria-hidden="true"></i> Не включается</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250" align="left"><i class="fa fa-power-off" aria-hidden="true"></i> Не включается</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="price animated fadeInUp">
+                        <h1>Настройка</h1>
+                        <table cellpadding="7">
+                            <tr>
+                                <td width="100%"><i class="fa fa-wifi" aria-hidden="true"></i> Настройка Wi-Fi и роутера</td>
+                                <td nowrap>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-wifi" aria-hidden="true"></i> Настройка Wi-Fi и роутера</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-wifi" aria-hidden="true"></i> Настройка Wi-Fi и роутера</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-wifi" aria-hidden="true"></i> Настройка Wi-Fi и роутера</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td width="250"><i class="fa fa-wifi" aria-hidden="true"></i> Настройка Wi-Fi и роутера</td>
+                                <td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <h2 class="title__main">
+                            Возможности ONECL1CK
+                        </h2>
+                        <p class="title__text">
+                            Очень серьезные возможности. Инновационные решения. Высоконагруженные системы. Распределенные вычисления.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-windows feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Переустановка Windows
+                            </h3>
+                            <p class="feature__text">
+                                Переустановка и настройка Windows 95, 98, Millenium, NT, XP, 7, 8, 9, 10, 11
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-medkit feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Установка антивируса
+                            </h3>
+                            <p class="feature__text">
+                                Поставим и крякнем любой антивирус на ваш выбор, Касперский, Eset, ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-files-o feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Восстановление данных
+                            </h3>
+                            <p class="feature__text">
+                                Восстановим потерянные данные с жесткого диска, флешки, диска, дискетты, перфокарты...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-tablet feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Апгрейд
+                            </h3>
+                            <p class="feature__text">
+                                Повысим производительность вашего компьютера за счет установки нового железа.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-desktop feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Установка ПО
+                            </h3>
+                            <p class="feature__text">
+                                Установим, настроим, крякнем любое программное обеспечение на ваш выбор, даже самые дорогие, поверьте, есть варианты
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-bath feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                БОЧОК ПОТiК!
+                            </h3>
+                            <p class="feature__text">
+                                Ярік, пізда, бачок! Бачок потік бля нахуй! Ярік вилазь бля нахуй! Тікай нахуй!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="malware">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/malware.png" width="780">
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="malware__container">
+                        <h2>АНТИВИРУСЫ</h2>
+                        <h3>БУДЬ УМНЕЕ, ЗАЩИТИ СЕБЯ!</h3>
+                        <p>
+                            Короче, Необучаемый, я тебя спас и в благородство играть не буду: поставишь пару бутылок коньяка — и мы в расчете. Заодно посмотрим, как быстро у тебя вконтактик после троянов прояснится. А по твоей теме постараюсь разузнать. Хрен его знает, на кой ляд тебе этот антивирус сдался, но я в чужие дела не лезу, хочешь установить, значит есть за чем...
+                        </p>
+                        <div class="learn_more">
+                            <a href="#">Всмысле?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <h2 class="title__main">
+                            Возможности ONECL1CK
+                        </h2>
+                        <p class="title__text">
+                            Очень серьезные возможности. Инновационные решения. Высоконагруженные системы. Распределенные вычисления.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-windows feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Переустановка Windows
+                            </h3>
+                            <p class="feature__text">
+                                Переустановка и настройка Windows 95, 98, Millenium, NT, XP, 7, 8, 9, 10, 11
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-medkit feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Установка антивируса
+                            </h3>
+                            <p class="feature__text">
+                                Поставим и крякнем любой антивирус на ваш выбор, Касперский, Eset, ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-files-o feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Восстановление данных
+                            </h3>
+                            <p class="feature__text">
+                                Восстановим потерянные данные с жесткого диска, флешки, диска, дискетты, перфокарты...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-tablet feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Апгрейд
+                            </h3>
+                            <p class="feature__text">
+                                Повысим производительность вашего компьютера за счет установки нового железа.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-desktop feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                Установка ПО
+                            </h3>
+                            <p class="feature__text">
+                                Установим, настроим, крякнем любое программное обеспечение на ваш выбор, даже самые дорогие, поверьте, есть варианты
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="feature d-flex">
+                        <i class="fa fa-bath feature__icon"></i>
+                        <div class="feature__block">
+                            <h3 class="feature__title">
+                                БОЧОК ПОТiК!
+                            </h3>
+                            <p class="feature__text">
+                                Ярік, пізда, бачок! Бачок потік бля нахуй! Ярік вилазь бля нахуй! Тікай нахуй!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="touch" class="touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer">
+                        <h2 class="footer__main">
+                            Будь на связи!
+                        </h2>
+                        <p class="footer__text">
+                            Оставьте ваш e-mail, если хотите всегда быть вкурсе ONECL1CK.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <form action="#" class="form">
+                        <input type="email" placeholder="Введите ваше мыло" class="form__input" required>
+                        <button type="submit" class="form__btn">Поiхали!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="credits">
+                        ONECL1CK Inc. <br>
+                        Лысково,
+                        Главная 1, Россия
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

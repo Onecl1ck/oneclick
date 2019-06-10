@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task1</title>
+    
+   <link rel="stylesheet" href="css/main.css">
+
+</head>
+<script src="script.js">
+</script>
+        
+<body>
+    <div>
+        <input id="money" placeholder="Ваш бюджет на месяц?" />
+        <input id="time" placeholder="Введите дату в формате YYYY-MM-DD" size="33" />
+
+    </div>
+    <div>
+        <input id="expenses1" placeholder="Введите обязательную статью расходов в этом месяце" size="46" />
+        <input id="expensesprice1" placeholder="Во сколько обойдется?" size="23" />
+    </div>
+    <div>
+        <input id="expenses2" placeholder="Введите обязательную статью расходов в этом месяце" size="46" />
+        <input id="expensesprice2" placeholder="Во сколько обойдется?" size="23" />
+        <input type="submit" onclick="takeinput(), takeinput2()" />
+    </div>
+    <div>
+        <input type="submit" onclick="onedaybudget()" value="Посчитать бюджет на 1 день" />
+
+    </div>
+</body>

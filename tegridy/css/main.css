@@ -1,0 +1,562 @@
+
+body {
+    font-family: "RobotoRegular", sans-serif;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Neucha', cursive;
+    font-weight: 700;
+    color: #4d9fd2;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+td {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.logo {
+
+    width: 239px;
+    height: 36px;
+}
+
+.yellow {
+    color: #fcdb00;
+}
+
+
+/* Первый экран */
+.header-hidden {
+    background-color: white !important;
+    transition: background-color 1s ease-in-out !important;
+
+}
+.menu__item-hidden  {
+    color: #4d9fd2 !important;
+    transition: color 1s ease-in-out !important;
+}
+.menu__item-hidden:hover {
+    color: #ff4800 !important;
+    transition: color 1s ease-in-out;
+}
+.top__btn-hidden {
+    color: #4d9fd2 !important;
+    border-color: #3c8cc4 !important;
+    transition: border-color 1s ease-in-out, color 1s ease-in-out !important;
+}
+.top__btn-hidden:hover {
+    color: #ff4800 !important;
+    border-color: #ff4800 !important;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+.header {
+    background-color: transparent;
+    transition: background-color 1.5s ease-in-out;
+    color: #010101;
+    padding-top:8px;
+    padding-bottom: 10px;
+    width:100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.wow {
+    width: auto;
+    height: 768px;
+    background: url(/img/back1.jpg) no-repeat center top;
+    background-size: cover!important
+}
+.prices {
+    width: auto;
+    padding-bottom: 30px;
+    background: url(../img/topprice1.png) no-repeat center top;
+    background-size: cover!important
+}
+.invite {
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-top: 150px;
+    background: transparent;
+    /*border-radius: 10px;
+    border: 10px groove black;*/
+}
+.invite h1{
+    color: white;
+    font-size: 32px;
+}
+.phoneform {
+    margin-left: 60px;
+}
+
+.price {
+   padding-top: 20px;
+    margin-top: 250px;
+    background: #e5e5e5;
+    transition: background-color 1s ease-in-out;
+    color: #000000;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+.price:hover {
+    background: #fff;
+    transition: background-color 1s ease-in-out;
+}
+.price-up {
+    margin-top: 200px !important;
+}
+
+
+.menu {
+    margin-top:8px;
+}
+
+.menu__item {
+    margin: 0px 25px;
+}
+.menu__item h2 {
+    font-size: 16px;
+
+}
+
+.menu__item a {
+    font-family: 'Neucha', cursive;
+    font-size:16px;
+    font-weight:700;
+    color: #fff;
+    text-decoration:none;
+    transition: color 1s ease-in-out;
+}
+.menu__item a:hover {
+    color: #ff4800;
+    transition: color 1s ease-in-out;
+}
+
+.offer {
+    margin-top: 280px;
+}
+
+.offer__title {
+    font-size:32px;
+    margin-bottom: 15px;
+}
+
+.offer__intro {
+    font-family: 'Neucha', cursive;
+    font-size: 22px;
+    line-height: 1.3em;
+    color: #cecccc;
+}
+
+.offer__text {
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+    margin-top:15px;
+    color: #cecccc;
+    width: 400px;
+}
+
+.icons__item {
+    margin-right:30px;
+}
+
+.icons__item a {
+    color: #cecccc;
+    font-size: 42px;
+    transition: all 0.3s ease;
+}
+
+.icons__item a:hover {
+    text-decoration: none;
+    color: #ff4800;
+}
+
+/* Второй экран */
+
+.timer {
+    width: 500px;
+    height: 500px
+}
+.timer-title, .timer-action, .timer-numbers {
+    text-align: center;
+}
+.timer-count {
+    font-size: 44px;
+    font-family: 'Neucha', cursive;
+    font-weight: 700;
+}
+
+.feature {
+    margin-bottom: 65px;
+}
+
+.feature__icon {
+    font-size: 50px;
+    margin-right: 37px;
+    color: #000
+}
+
+.feature__text {
+    color: #898989
+}
+.title {
+    padding-top: 80px;
+    padding-bottom:70px;
+    text-align: center;
+}
+
+.title__main {
+    font-size: 42px;
+}
+
+.title__text {
+    color: #010101;
+    font-size: 24px;
+
+    margin: 0 auto;
+}
+
+.malware {
+    text-align: center;
+    background-color: #45c0e1;
+    padding: 100px 20px 100px 20px;
+}
+.malware__container {
+    margin-left: 80px;
+    color: #fff;
+}
+.malware__container p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.malware__container h2{
+    font-size: 52px;
+    color: #fff;
+
+}
+.malware__container h3{
+    font-size: 40px;
+    color: #fff;
+
+}
+.malware img {
+    position: relative;
+    right: 320px;
+}
+.learn_more a{
+    margin-top: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+    border-radius: 5px;
+    padding: 8px 40px 8px 40px;
+    text-decoration: none;
+}
+.learn_more a:hover {
+    background-color: white;
+    color: #45c0e1;
+    transition: background-color  1s ease-in-out, color 1s ease-in-out;
+}
+/* Третий экран */
+
+
+
+.form {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.form__input {
+    background: #e5e5e5;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 5px;
+    width: 580px;
+    padding: 14px 0;
+    margin-right:21px;
+    border: 0;
+    padding-left:23px;
+    outline: none;
+}
+.phone__input {
+    background: #e5e5e5;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 50px;
+    width: 250px;
+    padding: 14px 0;
+    margin-right:21px;
+    border: 1px solid #fff;
+    outline: none;
+    text-align: center;
+}
+
+.form__btn {
+    font-family: 'PT Sans', sans-serif;
+    background: #fcdb00;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 126px;
+    border: 0;
+    padding: 14px 0;
+    cursor: pointer;
+    outline: none;
+}
+.top__btn {
+    font-family: 'PT Sans', sans-serif;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 150px;
+    border: 2px solid #fff;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top: -8px;
+    transition: border-color 1s ease-in-out, color 1s ease-in-out;
+
+}
+.top__btn:hover {
+
+    color: #ff4800;
+    border-color: #ff4800 !important;
+    transition: color 1s ease-in-out, border-color 1s ease-in-out;
+}
+
+.invite__btn {
+    font-family: 'PT Sans', sans-serif;
+    background: #45c0e1;
+    color: #000;
+    order: 999;
+    margin-top: 25px;
+    margin-right: 200px ;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 250px;
+    height: 50px;
+    border: 1px #ffffff solid;
+    padding: 7px 0;
+    cursor: pointer;
+    outline: none;
+}
+.orange {
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d; /*цвет фона кнопки для браузеров без поддержки CSS3*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20)); /* для Webkit браузеров */
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20); /* для Firefox */
+    background-image: -o-linear-gradient(top,  #faa51a,  #f47a20); /* для Opera 11 */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20'); /* фильтр для IE */
+}
+.orange:hover {
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+    background-image: -o-linear-gradient(top,  #f88e11,  #f06015);/* для Opera 11 */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+    background-image: -o-linear-gradient(top,  #f47a20,  #faa51a);/* для Opera 11 */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+/* Футер */
+.touch {
+    width: auto;
+    background-image: url(../img/foot.jpg);
+    background-size: cover!important;
+    color: #fff;
+}
+
+.footer{
+    margin-top: 400px;
+}
+.footer__main {
+    color: #fcdb00;
+}
+.footer__text {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+.credits {
+    color: #fff;
+    font-size: 16px;
+    width: 284px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 992px) {
+    .price {
+        margin-top: 45px;}
+    .invite {
+           margin-top: 250px;
+    }
+    .invite__btn {
+        margin-top: 70px;
+    }
+
+    .offer {
+        text-align: center;
+    }
+    .offer__text {
+        margin: 20px auto;
+        width: auto;
+    }
+    .icons {
+        justify-content: center;
+    }
+    .icons__item:nth-child(3) {
+        margin-right: 0;
+    }
+    .form__input {
+        margin-right:0;
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .top__btn {
+        width: 100%;
+    }
+    .title__text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+
+        width: 191px;
+        height: 29px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        text-align: center;
+
+    }
+    .title__text {
+        font-size: 20px;
+    }
+    .wow {
+        width: auto;
+        background-image: url("/img/back2.jpg");
+    }
+    .top__btn{
+        margin-top: 0px;
+    }
+    .phoneform {
+        margin-left: 15px;
+    }
+    .invite__btn{
+       margin-top: 60px;
+        margin-right: 30px;
+    }
+    .invite {
+        margin-top: 200px;
+    }
+    .invite h1 {
+        font-size: 24px;
+    }
+    .phone__input{
+        width: 120px;
+        font-size: 14px;
+    }
+    .invite__btn{
+        width: 120px;
+    }
+    .menu {
+        margin-top:0px;
+    }
+    .malware {
+        padding: 20px 20px 20px 20px;
+    }
+    .malware__container {
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+    .malware__container p{
+        font-size: 14px;
+    }
+
+    .malware__container h2{
+        font-size: 32px;
+    }
+    .malware__container h3{
+        font-size: 20px;
+    }
+    .malware img{
+        position: static;
+        width:260px ;
+    }
+
+    .icons__item a {
+        color: #ff4800;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .footer__text {
+        color: #0E0E0E;
+    }
+    .offer{
+        margin-top: 50px;
+    }
+    .offer__intro{
+        color: #232323;
+        font-weight:900;
+    }
+    .offer__text {
+        color: #232323;
+        font-weight:900;
+        font-size: 22px;
+
+    }
+
+}

@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Next Post"
+date:   2019-01-18 16:08:48 +0300
+# categories: jekyll update
+img: /images/page2_img3.jpg
+description:
+  Описание поста
+---
+
+Бла бла бла 
+
+![Alt-текст](/images/page2_img3.jpg)
+
+sss

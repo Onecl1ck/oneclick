@@ -1,0 +1,6 @@
+//let y = 1; let x = y = 2; alert(x);
+    //console.log(0 || "" || 2 || undefined || true || falså);
+    //var a = [1, 2, 3];
+    //var b = [1, 2, 3];
+    //(a == b) ? console.log("true") : console.log("false");
+    //alert(+"Infinity");
