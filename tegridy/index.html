@@ -18,11 +18,6 @@
         crossorigin="anonymous">
 </script>
 
-<script>
-    function setfocustel() {
-        tel.focus();
-    }
-</script>
 
 <script>
     function checktel() {
@@ -90,7 +85,7 @@
                                 </a>
                             </li>
                             <li>
-                                <button type="submit" id="top__btn" class="top__btn" onclick="setfocustel();">Позвонить! </button>
+                                <button type="submit" id="top__btn" class="top__btn" onclick="tel.focus();">Позвонить! </button>
                             </li>
                         </ul>
                     </nav>
@@ -111,7 +106,7 @@
                         </h1>
 
                         <form action="#" class="phoneform">
-                            <input id="tel" type="tel" placeholder="Твои цыфры, поц?" class="phone__input" required>
+                            <input id="tel" type="tel" placeholder="Номер телефона" class="phone__input" required>
                             <input id="butt" type="submit" class="invite__btn orange" value="Хотеть!" onclick="checktel();">
 
                         </form>
@@ -329,9 +324,7 @@
                         <p>
                             Короче, Необучаемый, я тебя спас и в благородство играть не буду: поставишь пару бутылок коньяка — и мы в расчете. Заодно посмотрим, как быстро у тебя вконтактик после троянов прояснится. А по твоей теме постараюсь разузнать. Хрен его знает, на кой ляд тебе этот антивирус сдался, но я в чужие дела не лезу, хочешь установить, значит есть за чем...
                         </p>
-                        <div class="learn_more">
-                            <a href="#">Всмысле?</a>
-                        </div>
+                        <button class="learn_more">Всмысле?</button>
                     </div>
                 </div>
             </div>
@@ -341,11 +334,11 @@
     <section class="malware">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <div class="malware__container"><h3>Успей заказать антивирус со скидкой!</h3></div>
 
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <div class="malware__container"><h3>До конца акции осталось</h3></div>
                     <div id="timer" class="timer-count">
                         <span class="hours">18</span>
@@ -499,6 +492,31 @@
             </div>
         </div>
     </section>
+
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-close">
+                &times;
+            </div>
+            <div class="popup-title">
+                Впрямом!
+            </div>
+            <div class="popup-form">
+                <form action="#" class="main-form">
+                    <div class="popup-form-header">
+                        Не тупи!
+                    </div>
+                    <label class="popup-form__label" for="phone">
+                        Вводи свои цифры:
+                    </label>
+                    <input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
+                    <button class="button popup-form__btn">
+                        Оставить заявку!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="js/script.js"></script>
