@@ -1,4 +1,5 @@
 ﻿'use strict';
+
 //Timer
 let //deadline = '2019-06-14';
     deadline = new Date();
